@@ -1,0 +1,7 @@
+Flask==0.12.2
+grpcio==1.8.6
+requests
+requests-toolbelt
+tensorflow
+pyopenssl
+gunicorn

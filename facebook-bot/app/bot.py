@@ -143,7 +143,7 @@ def receive_message():
                         response_text = "I did not identify any Facebook newsfeed ads there. Is this correct?"
                     else:
                         ret = bot.send_image(recipient_id, image_path)
-                        response_text = "Did I identify the ads?"
+                        response_text = "Did I identify the ads? Go here to zoom in: https://www.messenger.com/t/SentinelAI"
 
                     ret = bot.send_button_message(recipient_id, response_text,
                         [

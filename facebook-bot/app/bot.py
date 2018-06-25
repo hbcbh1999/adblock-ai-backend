@@ -130,10 +130,10 @@ def receive_message():
                     if (not os.path.exists(usr_path)):
                         os.makedirs(usr_path)
 
-                    image_path = os.path.join(usr_path, "screenshot.png")
+                    image_path = os.path.join(usr_path, "screenshot.jpg")
                     num = 1
                     while os.path.exists(image_path):
-                        image_path = os.path.join(usr_path, "screenshot" + str(num) + ".png")
+                        image_path = os.path.join(usr_path, "screenshot" + str(num) + ".jpg")
                         num = num + 1
 
                     with open(image_path, 'wb') as handler:

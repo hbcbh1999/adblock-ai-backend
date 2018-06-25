@@ -195,6 +195,6 @@ def predict_and_draw_boxes(image_data):
     orig_image = cv2.imdecode(np.asarray(bytearray(image_data), dtype=np.uint8), cv2.IMREAD_UNCHANGED)
     image = draw_boxes(orig_image, boxes, ["Newsfeed", "AD", "Side Ad"])
 
-    ret, pngBytes = cv2.imencode(".png", image)
+    ret, pngBytes = cv2.imencode(".jpg", image)
     return (pngBytes, boxes)
 
